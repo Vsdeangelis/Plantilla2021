@@ -31,12 +31,10 @@ public class HomeFragment extends Fragment {
     private static final LatLng inmobiliaria= new LatLng(-33.271259,-66.297822);
     private MapView mapaInmo;
     private GoogleMap googleMap;
-    private HomeViewModel homeViewModel;
     private FragmentHomeBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         mapaInmo=root.findViewById(R.id.map);

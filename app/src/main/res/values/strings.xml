@@ -1,3 +1,63 @@
 <resources>
-    <string name="app_name">Plantilla</string>
+    <string name="app_name">Inmobiliaria</string>
+    <string name="inmobiliaria_de_angelis">Inmobiliaria De Angelis</string>
+    <string name="imagen">Imagen</string>
+    <string name="usuario">Usuario</string>
+    <string name="password">Password</string>
+    <string name="usuario_o_contrase_a_incorrectos">Usuario o contraseña incorrectos</string>
+    <string name="login">Login</string>
+
+    <string name="title_activity_inicio">InicioActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Ubicacion</string>
+    <string name="inicio">Inicio</string>
+    <string name="perfil">Perfil</string>
+    <string name="inmuebles">Inmuebles</string>
+    <string name="inquilinos">Inquilinos</string>
+    <string name="contratos">Contratos</string>
+    <string name="logout">Logout</string>
+
+    <string name="codigo">Codigo</string>
+    <string name="dni">DNI</string>
+    <string name="nombreProp">Nombre</string>
+    <string name="apellidoProp">Apellido</string>
+    <string name="e_mailProp">E-mail</string>
+    <string name="contrasenia_prop">Contraseña</string>
+    <string name="telefonoProp">Telefono</string>
+    <string name="editar">Editar</string>
+    <string name="guardar">Guardar</string>
+    <string name="avatar">avatar</string>
+    <string name="inmueblefoto">inmuebleFoto</string>
+    <string name="textview">TextView</string>
+    <string name="informac_on_del_inmueble">Informacíon del inmueble</string>
+    <string name="ambientes">Ambientes</string>
+    <string name="direccion">Direccion</string>
+    <string name="precio">Precio</string>
+    <string name="uso">Uso</string>
+    <string name="disponible">Disponible</string>
+    <string name="imuebledetalle">TODO</string>
+    <string name="tipo">Tipo</string>
+    <string name="InmuInquilino">InmuInquilino</string>
+    <string name="ver">Ver</string>
+    <string name="informaci_n_del_inquilino">Información del inquilino.</string>
+    <string name="fotocontratoinmueble">FotoContratoInmueble</string>
+    <string name="verContra">Ver</string>
+    <string name="informaci_n_del_contrato">Información del contrato.</string>
+    <string name="c_digo_de_contrato">Código de contrato:</string>
+    <string name="informaci_n_de_contrato">Información de contrato.</string>
+    <string name="codigo_de_contrato">Codigo de contrato:</string>
+    <string name="fecha_de_inicio">Fecha de inicio:</string>
+    <string name="fecha_de_finalizaci_n">Fecha de finalización:</string>
+    <string name="monto_de_alquiler">Monto de alquiler:</string>
+    <string name="inquilino">Inquilino:</string>
+    <string name="inmueble_en">Inmueble en:</string>
+    <string name="pagos">PAGOS</string>
+
+
 </resources>

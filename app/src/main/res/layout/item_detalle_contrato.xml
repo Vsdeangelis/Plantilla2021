@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="20dp"
+    app:contentPadding="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivContrato"
+            android:layout_width="159dp"
+            android:layout_height="79dp"
+            android:contentDescription="@string/fotocontratoinmueble"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircleRadius="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.139"
+            app:srcCompat="@drawable/ic_menu_slideshow" />
+
+        <TextView
+            android:id="@+id/tvDireContrato"
+            android:layout_width="183dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/design_default_color_background"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivContrato"/>
+
+        <Button
+            android:id="@+id/btVerContrato"
+            android:layout_width="119dp"
+            android:layout_height="57dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="@string/ver"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDireContrato"
+            app:layout_constraintEnd_toEndOf="@+id/tvDireContrato"
+            app:layout_constraintStart_toStartOf="@+id/tvDireContrato"
+            app:layout_constraintTop_toBottomOf="@+id/ivContrato"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clInfoContrato"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.contratos.DetalleContratoFragment">
+
+
+    <TextView
+        android:id="@+id/tvDetaContrato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/informaci_n_de_contrato"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/codigo_de_contrato"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetaContrato" />
+
+    <TextView
+        android:id="@+id/tvCodigoContrato"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/fecha_de_inicio"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCodigoContrato" />
+
+    <TextView
+        android:id="@+id/tvFechaInicio"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/fecha_de_finalizaci_n"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFechaInicio" />
+
+    <TextView
+        android:id="@+id/tvFechaFin"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/monto_de_alquiler"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFechaFin" />
+
+    <TextView
+        android:id="@+id/tvMotoAlquiler"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/inquilino"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMotoAlquiler" />
+
+    <TextView
+        android:id="@+id/tvNameInquilino"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv5" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/inmueble_en"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameInquilino" />
+
+    <TextView
+        android:id="@+id/tvDireInmueble"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btPagos"
+        android:layout_width="238dp"
+        android:layout_height="76dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/pagos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908" />
+</androidx.constraintlayout.widget.ConstraintLayout>

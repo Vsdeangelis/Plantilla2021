@@ -7,12 +7,82 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/inmobiliaria_de_angelis"
+        android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <ImageView
+        android:id="@+id/ivInmobiliaria"
+        android:layout_width="134dp"
+        android:layout_height="112dp"
+        android:contentDescription="@string/imagen"
+        app:layout_constraintBottom_toTopOf="@+id/etUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="ImageContrastCheck" />
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="224dp"
+        android:ems="10"
+        android:hint="@string/usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/etContrasenia"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsuario"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usuario_o_contrase_a_incorrectos"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etContrasenia"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="211dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginBottom="88dp"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etContrasenia" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

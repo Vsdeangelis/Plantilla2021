@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.inquilinos.DetalleInquinoFragment" >
+
+    <TextView
+        android:id="@+id/tvInfoInqui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/informaci_n_del_inquilino"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/tvCodInqui"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfoInqui" />
+
+    <TextView
+        android:id="@+id/tvNomInqui"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCodInqui" />
+
+    <TextView
+        android:id="@+id/tvApeInqui"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomInqui" />
+
+    <TextView
+        android:id="@+id/tvDniInqui"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvApeInqui" />
+
+    <TextView
+        android:id="@+id/tvMailInqui"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDniInqui" />
+
+    <TextView
+        android:id="@+id/tvTelInqui"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMailInqui" />
+
+    <TextView
+        android:id="@+id/tvGarante"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTelInqui" />
+
+    <TextView
+        android:id="@+id/tvTelGarante"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGarante"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

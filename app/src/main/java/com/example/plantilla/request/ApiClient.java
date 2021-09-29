@@ -25,8 +25,7 @@ public class ApiClient {
             api=new ApiClient();
         }
         return api;
-
-        }
+    }
 
 
 
@@ -110,9 +109,9 @@ public Propietario login(String mail, final String password){
     }
 //Actualizar Perfil
     public void actualizarPerfil(Propietario propietario){
-        int posición=propietarios.indexOf(propietario);
-        if(posición!=-1){
-            propietarios.set(posición,propietario);
+        int posicion=propietarios.indexOf(propietario);
+        if(posicion!=-1){
+            propietarios.set(posicion,propietario);
         }
     }
 

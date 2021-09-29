@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="20dp"
+    app:contentPadding="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="376dp"
+        android:layout_height="253dp"
+        android:background="#97673AB7"
+        android:backgroundTint="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tvCodigoPago"
+            android:layout_width="290dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.197"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNumeroPago"
+            android:layout_width="290dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="14sp"
+            android:textAlignment="textStart"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.197"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCodigoPago" />
+
+        <TextView
+            android:id="@+id/tvCodigoCont"
+            android:layout_width="290dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.197"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNumeroPago" />
+
+        <TextView
+            android:id="@+id/tvImportePago"
+            android:layout_width="290dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.197"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCodigoCont" />
+
+        <TextView
+            android:id="@+id/tvFechaPago"
+            android:layout_width="290dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:textAlignment="textStart"
+            android:textStyle="italic"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.197"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvImportePago"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

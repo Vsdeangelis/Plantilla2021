@@ -49,12 +49,13 @@
 
     <Button
         android:id="@+id/btLogin"
-        android:layout_width="211dp"
-        android:layout_height="62dp"
+        android:layout_width="254dp"
+        android:layout_height="98dp"
         android:layout_marginTop="91dp"
         android:layout_marginBottom="88dp"
         android:backgroundTint="@color/colorPrimary"
         android:text="@string/login"
+        app:layout_constraintCircleRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

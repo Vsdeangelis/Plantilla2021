@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="200dp"
     android:layout_gravity="start|top"
-    android:background="@drawable/side_nav_bar"
+    android:background="@color/ic_inmo_background"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"

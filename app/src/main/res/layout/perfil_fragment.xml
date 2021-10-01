@@ -26,7 +26,7 @@
         android:id="@+id/etCodigo"
         android:layout_width="160dp"
         android:layout_height="48dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="48dp"
         android:allowUndo="false"
         android:editable="false"
         android:ems="10"
@@ -37,7 +37,7 @@
         android:selectAllOnFocus="false"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPerfil"
         tools:ignore="Deprecated,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,TextContrastCheck"
@@ -47,7 +47,6 @@
         android:id="@+id/etDni"
         android:layout_width="160dp"
         android:layout_height="48dp"
-        android:layout_marginTop="32dp"
         android:ems="10"
         android:enabled="false"
         android:hint="@string/dni"
@@ -55,10 +54,9 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/etNombre"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etCodigo"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,TextContrastCheck" />
 
     <EditText
@@ -81,30 +79,31 @@
         android:id="@+id/etApellido"
         android:layout_width="370dp"
         android:layout_height="48dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:enabled="false"
         android:hint="@string/apellidoProp"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNombre"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,TextContrastCheck,TextContrastCheck" />
+
 
     <EditText
         android:id="@+id/etMail"
         android:layout_width="370dp"
         android:layout_height="48dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:enabled="false"
         android:hint="@string/e_mailProp"
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etApellido"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -120,23 +119,11 @@
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/btEditar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etMail"
-        app:layout_constraintVertical_bias="0.132"
+        app:layout_constraintVertical_bias="0.126"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,TextContrastCheck" />
-
-    <Button
-        android:id="@+id/btEditar"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="227dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="68dp"
-        android:hint="@string/editar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="DuplicateClickableBoundsCheck,TextContrastCheck" />
 
     <EditText
         android:id="@+id/etTelefono"
@@ -150,10 +137,10 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/btEditar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etContrasenia"
-        app:layout_constraintVertical_bias="0.736"
+        app:layout_constraintVertical_bias="0.487"
         tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
 
     <ImageView
@@ -166,23 +153,43 @@
         android:src="@drawable/ic_launcher_foreground"
         app:layout_constraintBottom_toTopOf="@+id/etNombre"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintHorizontal_bias="0.819"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="ImageContrastCheck" />
 
     <Button
-        android:id="@+id/btGuardar"
-        android:layout_width="227dp"
+        android:id="@+id/btEditar"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="285dp"
         android:layout_height="70dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/boton_redondo"
+        android:backgroundTint="?attr/colorPrimary"
+        android:hint="@string/editar"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateClickableBoundsCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btGuardar"
+        android:layout_width="285dp"
+        android:layout_height="70dp"
+        android:background="@drawable/boton_redondo"
+        android:backgroundTint="?android:attr/colorEdgeEffect"
         android:hint="@string/guardar"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="italic"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etTelefono"
-        app:layout_constraintVertical_bias="0.418"
+        app:layout_constraintVertical_bias="0.382"
         tools:visibility="invisible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

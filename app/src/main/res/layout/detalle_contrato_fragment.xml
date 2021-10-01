@@ -187,8 +187,9 @@
 
     <Button
         android:id="@+id/btPagos"
-        android:layout_width="238dp"
-        android:layout_height="76dp"
+        android:layout_width="298dp"
+        android:layout_height="67dp"
+        android:background="@drawable/boton_redondo"
         android:backgroundTint="@color/colorPrimary"
         android:text="@string/pagos"
         app:layout_constraintBottom_toBottomOf="parent"

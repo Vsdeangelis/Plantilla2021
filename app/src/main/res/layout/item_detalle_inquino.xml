@@ -47,8 +47,9 @@
 
         <Button
             android:id="@+id/btVer"
-            android:layout_width="102dp"
-            android:layout_height="40dp"
+            android:layout_width="112dp"
+            android:layout_height="29dp"
+            android:background="@drawable/boton_redondo"
             android:backgroundTint="?attr/colorPrimary"
             android:text="@string/ver"
             android:textSize="14sp"

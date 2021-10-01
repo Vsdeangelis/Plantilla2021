@@ -47,12 +47,15 @@ public class PerfilViewModel extends ViewModel {
     public void ModificarProp(Propietario p){
         api.actualizarPerfil(p);
         guardar.setValue(View.INVISIBLE);
+        editTexts.setValue(false);
         editar.setValue(View.VISIBLE);
     }
     public void CambiarBoton(){
-        editTexts.setValue(true);
         editar.setValue(View.INVISIBLE);
+        editTexts.setValue(true);
         guardar.setValue(View.VISIBLE);
+
+
     }
 
 }

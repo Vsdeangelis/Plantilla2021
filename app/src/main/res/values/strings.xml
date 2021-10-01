@@ -30,8 +30,8 @@
     <string name="e_mailProp">E-mail</string>
     <string name="contrasenia_prop">Contraseña</string>
     <string name="telefonoProp">Telefono</string>
-    <string name="editar">Editar</string>
-    <string name="guardar">Guardar</string>
+    <string name="editar">EDITAR</string>
+    <string name="guardar">GUARDAR</string>
     <string name="avatar">avatar</string>
     <string name="inmueblefoto">inmuebleFoto</string>
     <string name="textview">TextView</string>
@@ -61,6 +61,7 @@
     <string name="logo">logo</string>
     <string name="no_hay_propiedades_alquiladas">No hay    propiedades alquiladas.</string>
     <string name="no_hay_contratos_vigentes">No hay contratos vigentes.</string>
+    <string name="usted_est_por_salir_de_la_aplicaci_n">Usted está por salir de la aplicación.</string>
 
 
 </resources>

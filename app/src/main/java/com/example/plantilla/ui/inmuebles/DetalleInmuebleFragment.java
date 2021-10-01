@@ -46,7 +46,7 @@ public class DetalleInmuebleFragment extends Fragment {
                         .diskCacheStrategy(DiskCacheStrategy.ALL)//optativa!guarda en el cache a la img
                         .into(binding.ivInmuebleDetalle);//carga la imagen
                 binding.tvTipo.setText("Tipo: \n"+inmueble.getTipo());
-                //binding.cbDisponible.setChecked(inmueble.isEstado());
+                binding.cbDisponible.setChecked(inmueble.isEstado());
                 binding.cbDisponible.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

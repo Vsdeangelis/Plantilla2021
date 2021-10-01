@@ -1,12 +1,9 @@
 package com.example.plantilla.ui.contratos;
 
-import android.os.Bundle;
-
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.plantilla.modelo.Contrato;
 import com.example.plantilla.modelo.Inmueble;
 import com.example.plantilla.request.ApiClient;
 

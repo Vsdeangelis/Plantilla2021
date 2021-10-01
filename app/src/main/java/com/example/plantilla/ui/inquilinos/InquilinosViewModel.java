@@ -9,7 +9,6 @@ import com.example.plantilla.request.ApiClient;
 
 import java.util.ArrayList;
 
-
 public class InquilinosViewModel extends ViewModel {
     private MutableLiveData<ArrayList<Inmueble>>inmuAlquilados;
     private ApiClient api;

@@ -54,7 +54,6 @@ public class InquilinosFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         vmInqui = new ViewModelProvider(this).get(InquilinosViewModel.class);
-        // TODO: Use the ViewModel
     }
 
 }

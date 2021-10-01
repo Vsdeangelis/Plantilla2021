@@ -1,24 +1,17 @@
 package com.example.plantilla.ui.contratos;
 
-import android.annotation.SuppressLint;
 import android.app.Application;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
 
 import com.example.plantilla.modelo.Contrato;
 import com.example.plantilla.modelo.Inmueble;
-import com.example.plantilla.modelo.Pago;
 import com.example.plantilla.request.ApiClient;
-
-import java.util.ArrayList;
 
 public class DetalleContratoViewModel extends AndroidViewModel {
     private MutableLiveData<Contrato>contrato;

@@ -1,6 +1,5 @@
 package com.example.plantilla.ui.contratos;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.lifecycle.LiveData;

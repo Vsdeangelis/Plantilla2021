@@ -1,10 +1,8 @@
 package com.example.plantilla.ui.contratos;
 
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -16,7 +14,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.plantilla.InicioActivity;
 import com.example.plantilla.R;
 import com.example.plantilla.databinding.DetalleContratoFragmentBinding;
 import com.example.plantilla.modelo.Contrato;

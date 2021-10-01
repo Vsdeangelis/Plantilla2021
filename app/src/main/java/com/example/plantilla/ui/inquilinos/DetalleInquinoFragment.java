@@ -13,11 +13,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.plantilla.R;
-import com.example.plantilla.databinding.DetalleInmuebleFragmentBinding;
 import com.example.plantilla.databinding.DetalleInquinoFragmentBinding;
 import com.example.plantilla.modelo.Inquilino;
-import com.example.plantilla.ui.inmuebles.DetalleInmuebleViewModel;
 
 public class DetalleInquinoFragment extends Fragment {
     private DetalleInquinoFragmentBinding binding;

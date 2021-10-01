@@ -18,7 +18,6 @@ import android.view.ViewGroup;
 import com.example.plantilla.R;
 import com.example.plantilla.adapter.ContratosAdapter;
 import com.example.plantilla.modelo.Inmueble;
-import com.example.plantilla.ui.inquilinos.InquilinosViewModel;
 
 import java.util.ArrayList;
 

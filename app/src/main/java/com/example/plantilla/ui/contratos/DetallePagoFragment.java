@@ -3,7 +3,6 @@ package com.example.plantilla.ui.contratos;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -17,18 +16,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.plantilla.R;
-import com.example.plantilla.adapter.ContratosAdapter;
 import com.example.plantilla.adapter.PagosAdapter;
-import com.example.plantilla.databinding.DetallePagoFragmentBinding;
-import com.example.plantilla.modelo.Contrato;
-import com.example.plantilla.modelo.Inmueble;
 import com.example.plantilla.modelo.Pago;
-import com.example.plantilla.modelo.Propietario;
 
 import java.util.ArrayList;
 
 public class DetallePagoFragment extends Fragment {
-    private DetallePagoFragmentBinding binding;
     private DetallePagoViewModel pagoViewModel;
     private PagosAdapter pagosAdapter;
     private RecyclerView rvPagos;

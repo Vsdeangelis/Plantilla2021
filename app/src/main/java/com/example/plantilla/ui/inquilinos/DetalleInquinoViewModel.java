@@ -2,7 +2,6 @@ package com.example.plantilla.ui.inquilinos;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;

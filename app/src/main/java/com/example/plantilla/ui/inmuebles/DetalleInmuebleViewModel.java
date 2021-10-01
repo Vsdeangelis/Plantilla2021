@@ -7,9 +7,12 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.example.plantilla.modelo.Inmueble;
+import com.example.plantilla.request.ApiClient;
 
 public class DetalleInmuebleViewModel extends ViewModel {
     private MutableLiveData<Inmueble> inmu;
+    ApiClient api= ApiClient.getApi();
+    private Inmueble i;
     public LiveData<Inmueble> getInmu() {
         if(inmu==null){
             inmu= new MutableLiveData<>();
@@ -18,7 +21,11 @@ public class DetalleInmuebleViewModel extends ViewModel {
     }
 
     public void setInmu(Bundle b) {
-        Inmueble i= (Inmueble) b.getSerializable("inmueble");
+        i= (Inmueble) b.getSerializable("inmueble");
         inmu.setValue(i);
+    }
+    public void actualizarInmu(Boolean b){
+        i.setEstado(b);
+        api.actualizarInmueble(i);
     }
 }

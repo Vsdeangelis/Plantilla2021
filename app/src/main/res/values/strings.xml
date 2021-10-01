@@ -58,6 +58,9 @@
     <string name="inquilino">Inquilino:</string>
     <string name="inmueble_en">Inmueble en:</string>
     <string name="pagos">PAGOS</string>
+    <string name="logo">logo</string>
+    <string name="no_hay_propiedades_alquiladas">No hay    propiedades alquiladas.</string>
+    <string name="no_hay_contratos_vigentes">No hay contratos vigentes.</string>
 
 
 </resources>

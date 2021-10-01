@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.plantilla.R;
 import com.example.plantilla.adapter.ContratosAdapter;
@@ -25,6 +26,7 @@ public class ContratosFragment extends Fragment {
     private RecyclerView rvContratos;
     private ContratosAdapter contratosAdapter;
     private ContratosViewModel contratosVM;
+    private TextView tvAviso;
 
     public static ContratosFragment newInstance() {
         return new ContratosFragment();
@@ -38,6 +40,14 @@ public class ContratosFragment extends Fragment {
         rvContratos=(RecyclerView) vistaContrato.findViewById(R.id.rvContratos);
         GridLayoutManager glContrato= new GridLayoutManager(getContext(), 2,
                 GridLayoutManager.VERTICAL, false);
+        tvAviso=vistaContrato.findViewById(R.id.tvMensajeContrato);
+        contratosVM.getAvisoContrato().observe(getViewLifecycleOwner(),
+                new Observer<Integer>() {
+                    @Override
+                    public void onChanged(Integer integer) {
+                        tvAviso.setVisibility(integer);
+                    }
+                });
         contratosVM.getInmuebleAlqui().observe(getViewLifecycleOwner(),
                 new Observer<ArrayList<Inmueble>>() {
             @Override

@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.plantilla.R;
 import com.example.plantilla.adapter.InquilinosAdapter;
@@ -25,6 +26,7 @@ public class InquilinosFragment extends Fragment {
     private RecyclerView rvInqui;
     private InquilinosAdapter inquilinosAdapter;
     private InquilinosViewModel vmInqui;
+    private TextView textView;
 
     public static InquilinosFragment newInstance() {
         return new InquilinosFragment();
@@ -36,8 +38,15 @@ public class InquilinosFragment extends Fragment {
         View vista= inflater.inflate(R.layout.inquilinos_fragment, container, false);
         vmInqui=new ViewModelProvider(this).get(InquilinosViewModel.class);
         rvInqui=(RecyclerView) vista.findViewById(R.id.rvInquilinos);
+        textView= vista.findViewById(R.id.tvMensajeAlquiler);
         GridLayoutManager glInqui= new GridLayoutManager(getContext(), 2,
                 GridLayoutManager.VERTICAL, false);
+        vmInqui.GetAviso().observe(getViewLifecycleOwner(), new Observer<Integer>() {
+            @Override
+            public void onChanged(Integer integer) {
+                textView.setVisibility(integer);
+            }
+        });
         vmInqui.getInmuAlquilados().observe(getViewLifecycleOwner(), new Observer<ArrayList<Inmueble>>() {
             @Override
             public void onChanged(ArrayList<Inmueble> inmuebles) {

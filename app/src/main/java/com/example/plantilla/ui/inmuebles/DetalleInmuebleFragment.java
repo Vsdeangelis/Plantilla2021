@@ -40,12 +40,19 @@ public class DetalleInmuebleFragment extends Fragment {
                 binding.tvDireccion.setText("Direccion: \n"+inmueble.getDireccion());
                 binding.tvPrecio.setText("Precio: \n"+inmueble.getPrecio());
                 binding.tvUso.setText("Uso: \n"+inmueble.getUso());
-                binding.cbDisponible.setChecked(inmueble.isEstado());
+
                 Glide.with(getContext())//obtiene el contexto dond poner la img
                         .load(inmueble.getImagen())//url de la ig
                         .diskCacheStrategy(DiskCacheStrategy.ALL)//optativa!guarda en el cache a la img
                         .into(binding.ivInmuebleDetalle);//carga la imagen
                 binding.tvTipo.setText("Tipo: \n"+inmueble.getTipo());
+                //binding.cbDisponible.setChecked(inmueble.isEstado());
+                binding.cbDisponible.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        mViewModel.actualizarInmu(binding.cbDisponible.isChecked());
+                    }
+                });
             }
         });
         mViewModel.setInmu(getArguments());
